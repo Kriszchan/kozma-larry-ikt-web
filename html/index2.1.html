@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larry/Kozma</title>
+    <link rel="stylesheet" href="../css/style2.1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="large">
+        <div class="box">
+            <div class="container_jobb" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change()">
+                <img src="../img/kozma.jpg" alt="" class="image" id="i1" >
+                <div id="overlay_jobb">
+                    <div class="text">
+                        <h1>Larry Ellison</h1>
+                        <h2>Befektető, üzletember</h2>
+                        <h3>Oracle Corporation társalapítója, <br> technológiai vezetője(CTO)</h3>
+                        <h4>August 17, 1944</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="container_bal" onpointerenter="wchange('overlay_jobb', '100%')" onpointerleave="wchange('overlay_jobb', '0%')" onpointerdown="change()" >
+                <img src="../img/larry-ellison.jpg" alt="" class="image" id="i2" >
+                <div id="overlay_bal">
+                    <div class="text">
+                        <h1>Kozma László</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kozma" style="display: none;">
+            <div class="navbar">
+                <table>
+                    <tr>
+                        <td onpointerdown="reset()">
+                            Kezdőlap
+                        </td>
+                        <td onpointerdown="change('kozma')">
+                            Larry Ellison
+                        </td>
+                        <td class="current" >
+                            Kozma László
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content"></div>
+        </div>
+        <div class="larry" style="display: none;">
+            <div class="navbar">
+                <table>
+                    <tr>
+                        <td onpointerdown="reset()">
+                            Kezdőlap
+                        </td>
+                        <td class="current">
+                            Larry Ellison
+                        </td>
+                        <td onpointerdown="change('kozma')">
+                            Kozma László
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="header">
+                <h1>Larry Joseph Ellison</h1>
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+        <script src="../js/script.js">
+            
+        </script>
+    </div>
+</body>
+</html>
