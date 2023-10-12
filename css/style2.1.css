@@ -36,7 +36,10 @@ body{
     width: 0%;
     height: 100%;
     /* oracle company ^ building here  */
-    background-color: black;
+    background-image: url("../img/comp1950.jpg");
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: 0.3s ease-in-out ;
     overflow: hidden;
 }
@@ -47,9 +50,7 @@ body{
     left: 0;
     right: 0;
     font-size: 5vh;
-    color: #C74634;
-    -webkit-text-stroke-width: 0.001px;
-    -webkit-text-stroke-color: white;
+    color: white;
     text-align: center;
     overflow: hidden;
 }
@@ -75,6 +76,7 @@ body{
     background-size: cover;
     transition: 0.3s ease-in-out ;
     overflow: hidden;
+    filter: grayscale(50%);
 }
 @media only screen and (max-width: 1000px) {
     .box {

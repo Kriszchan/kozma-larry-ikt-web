@@ -14,6 +14,8 @@ function wchange(valtozando, wid)
                     document.getElementsByClassName('kozma')[0].style.display = "none";
                     document.getElementsByClassName('larry')[0].style.display = "block";
                 }
+                document.getElementsByClassName('box')[0].style.width = "50vw";
+                document.getElementsByClassName('box')[1].style.width = "50vw";
                 document.getElementsByClassName('container_jobb')[0].style.position = "absolute";
                 document.getElementsByClassName('container_bal')[0].style.position = "absolute";
                 document.getElementsByClassName('container_jobb')[0].style.width = "50vw";
