@@ -8,11 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/larry_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="large">
         <div class="box">
-            <div class="container_jobb" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change('kozma')">
+            <div class="container_jobb" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change()">
                 <img src="../img/kozma.jpg" alt="" class="image" id="i1" >
                 <div id="overlay_jobb">
                     <div class="text">
@@ -25,73 +31,6 @@
         </div>
         <div class="box">
             <div class="container_bal" onpointerenter="wchange('overlay_jobb', '100%')" onpointerleave="wchange('overlay_jobb', '0%')" onpointerdown="change()" >
-                <img src="../img/larry-ellison.jpg" alt="" class="image" id="i2" >
-                <div id="overlay_bal">
-                    <div class="text">
-                        <h1>Kozma László</h1>
-                        <h3>Villamosmérnök, egyetemi oktató</h3>
-                        <h4>Első magyar digitális számítógép tervezője</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="kozma" style="display: none;">
-            <div class="navbar">
-                <table>
-                    <tr>
-                        <td onpointerdown="reset()">
-                            Kezdőlap
-                        </td>
-                        <td onpointerdown="change('kozma')">
-                            Larry Ellison
-                        </td>
-                        <td class="current" >
-                            Kozma László
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="content"></div>
-        </div>
-        <div class="larry" style="display: none;">
-            <div class="navbar">
-                <table>
-                    <tr>
-                        <td onpointerdown="reset()">
-                            Kezdőlap
-                        </td>
-                        <td class="current">
-                            Larry Ellison
-                        </td>
-                        <td onpointerdown="change('kozma')">
-                            Kozma László
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="header">
-                <h1>Larry Joseph Ellison</h1>
-            </div>
-            <div class="content">
-                
-            </div>
-        </div>
-    </div>
-    <div class="mobile">
-        <div class="box">
-            <div class="container_fent" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change('kozma')">
-                <img src="../img/kozma.jpg" alt="" class="image" id="i1" >
-                <div id="overlay_fent">
-                    <div class="text">
-                        <h1>Larry Ellison</h1>
-                        <h3>Befektető, üzletember</h3>
-                        <h4>Oracle Corporation társalapítója, <br> technológiai vezetője(CTO)</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="container_lent" onpointerenter="wchange('overlay_jobb', '100%')" onpointerleave="wchange('overlay_jobb', '0%')" onpointerdown="change()" >
                 <img src="../img/larry-ellison.jpg" alt="" class="image" id="i2" >
                 <div id="overlay_bal">
                     <div class="text">
@@ -119,7 +58,9 @@
                     </tr>
                 </table>
             </div>
-            <div class="content"></div>
+            <div class="content">
+                
+            </div>
         </div>
         <div class="larry" style="display: none;">
             <div class="navbar">
@@ -137,14 +78,137 @@
                     </tr>
                 </table>
             </div>
-            <div class="header">
-                <h1>Larry Joseph Ellison</h1>
-            </div>
             <div class="content">
-                
+                <div class="row">
+                    <div class="col-xl-3 col-sm-12 cim-bg rounded-3">
+                      <nav class="navbar">
+                        <div>
+                          <ul class="navbar-nav nav">
+                            <li>
+                                <img src="../img/larry_kep1.jpg" width="110" height="110" class="rounded mx-auto d-block align-top" alt="Larry Ellison kép" title="Larry Ellison kép">
+                            </li>
+                            <li>
+                                <h3 class="text-center" style="margin-top: 1vh;">Larry Ellison</h3>
+                            </li>
+                            <li>
+                              <p class="text-center" style="margin-top: 2vh;">Larry Ellison karrierjét az Oracle Corporation alapításával és az általa kifejlesztett relációs adatbázisrendszer által történő forradalmasítással jellemezhetjük.</p>
+                            </li>
+                            <hr style="background-color: #E3FC02;">
+                            <li class="nav-item active">
+                              <a class="nav-link" onclick="div1Show()" href="#">Oracle alapítása</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="div2Show()" href="#">Vezetési filozófiája</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="div3Show()" href="#">Oracle felemelkedése</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="div4Show()" href="#">Szerepe a fejlesztésekben</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" onclick="div5Show()" href="#">Hatásai az informatikára</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div1">
+                        <div class="container" style="margin-top: 5vh;">
+                          <div class="cim-bg rounded-3" style="text-align: center;">
+                            <h2>Az Oracle alapítása és korai évei</h2>
+                          </div>
+                          <br>
+                          <hr style="background-color: #E3FC02;">
+                          <div class="cim-bg rounded-3 div_content">
+                            <ul>
+                              <li class="felsorolas">Larry Ellison, mint informatikai vállalkozó, megalkotta az Oracle Corporation-t 1977-ben</li>
+                              <li class="felsorolas">A cég célja az volt, hogy kifejlesszen egy új adatbázisrendszert, amely a hagyományos hierarchikus adatbázisoknál hatékonyabb és skálázhatóbb</li>
+                              <li class="felsorolas">Az általa létrehozott relációs adatbázisrendszer forradalmasította az adatkezelést és lehetővé tette az adatok hatékony és összetett lekérdezését</li>
+                              <li class="felsorolas">Az Oracle név ma is egyike a legismertebb és legnagyobb szoftvercégeknek a világon</li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div2" style="display: none;">
+                        <div class="container" style="margin-top: 5vh;">
+                          <div class="cim-bg rounded-3" style="text-align: center;">
+                            <h2>Vezetési filozófiája és vállalatstratégiai hozzájárulásai</h2>
+                          </div>
+                          <br>
+                          <hr style="background-color: #E3FC02;">
+                          <div class="cim-bg rounded-3 div_content">
+                            <ul>
+                              <li class="felsorolas">Ellison az üzleti világban híres a kemény versenyorientált vezetési stílusáról</li>
+                              <li class="felsorolas">Vezérigazgatóként és a cég vezetőjeként gyakran hozott merész döntéseket</li>
+                              <li class="felsorolas">Mint például agresszív akvizíciók és termékfejlesztési projektek</li>
+                              <li class="felsorolas">Az Oracle sikerének kulcsa közé tartozik az innovációra való folyamatos ösztönzés és az ügyfeleknek való folyamatos figyelem</li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div3" style="display: none;">
+                        <div class="container" style="margin-top: 5vh;">
+                          <div class="cim-bg rounded-3" style="text-align: center;">
+                            <h2>Az Oracle felemelkedése a világ egyik legnagyobb szoftvercégeként</h2>
+                          </div>
+                          <br>
+                          <hr style="background-color: #E3FC02;">
+                          <div class="cim-bg rounded-3 div_content">
+                            <ul>
+                              <li class="felsorolas">Az Oracle megalapítása óta számos stratégiai lépést tett, amelyekkel szélesítette termékportfólióját</li>
+                              <li class="felsorolas">Az Oracle globálisan széles körben elterjedt, és számos iparágban a legnagyobb ügyfeleket szolgálja ki</li>
+                            </ul>
+                            <p class="felsorolas">Ma a cég nemcsak adatbázisrendszereket kínál, hanem:</p>
+                            <ul>
+                              <li class="felsorolas">Felhőszolgáltatásokat</li>
+                              <li class="felsorolas">Alkalmazásokat</li>
+                              <li class="felsorolas">Egyéb üzleti megoldásokat</li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div4" style="display: none;">
+                      <div class="container" style="margin-top: 5vh;">
+                        <div class="cim-bg rounded-3" style="text-align: center;">
+                          <h2>Ellison szerepe az adatbázisrendszerek és felhőtechnológiák fejlesztésében</h2>
+                        </div>
+                        <br>
+                        <hr style="background-color: #E3FC02;">
+                        <div class="cim-bg rounded-3 div_content">
+                          <ul>
+                            <li class="felsorolas">Larry Ellison nem csak a cég vezetője, hanem a technológia fejlesztésének is szenvedélyes résztvevője</li>
+                            <li class="felsorolas">Az Oracle adatbázisrendszere, a "Oracle Database," a világ egyik legnépszerűbb relációs adatbázisrendszere</li>
+                            <li class="felsorolas">Az Oracle továbbá egyre nagyobb hangsúlyt fektet a felhőszolgáltatások fejlesztésére és innovációjára</li>
+                            <li class="felsorolas">Ezek lehetővé teszik az ügyfelek számára, hogy rugalmasan skálázzák informatikai infrastruktúrájukat</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div5" style="display: none;">
+                      <div class="container" style="margin-top: 5vh;">
+                        <div class="cim-bg rounded-3" style="text-align: center;">
+                          <h2>Ellison hatása az informatikai iparágra és az innovációra</h2>
+                        </div>
+                        <br>
+                        <hr style="background-color: #E3FC02;">
+                        <div class="cim-bg rounded-3 div_content">
+                          <ul>
+                            <li class="felsorolas">Larry Ellison évtizedeken keresztül a technológiai innováció és az informatikai iparág élén állt</li>
+                            <li class="felsorolas">Az általa vezetett Oracle olyan megoldásokat kínál, amelyek ma az üzleti világ alapvető részei</li>
+                            <li class="felsorolas">Ellison hatása az informatikai vezetőkre és vállalkozókra is jelentős, inspirációt nyújtva számukra az innováció és a versenyképesség terén</li>
+                            <li class="felsorolas">Az ő sikertörténete egyike az informatikai iparág ikonikus történeteinek</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <footer style="text-align: center; margin-top: 3vh; width: 25vw;" class="cim-bg mx-auto d-block rounded-3"><b>Készítette: </b>Ress Dominik - 11.A - 2023.10.17</footer>
+                </div>
             </div>
-        </div>
         </div>
         <script src="../js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="../js/js.js"></script>
+    </div>
 </body>
 </html>

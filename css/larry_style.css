@@ -1,0 +1,44 @@
+body {
+    overflow-x: hidden !important;
+    background-color: #1F1F21  !important;
+    color: white !important;
+}
+
+.nav-item {
+    margin-top: 5vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 1vw;
+}
+
+.nav-item:last-child {
+    margin-bottom: 3vh;
+}
+
+.container5 {
+    width: 100%;
+    display: block;
+    margin-top: 5vh;
+}
+
+.cim-bg {
+    padding: 10px;
+    box-shadow: rgba(227, 252, 2, 0.473) 0px 7px 29px 0px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.div_content {
+    min-height: 55vh;
+    margin-top: 5vh;
+    font-size: large;
+}
+
+.felsorolas {
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
