@@ -12,7 +12,7 @@
 <body>
     <div class="large">
         <div class="box">
-            <div class="container_jobb" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change()">
+            <div class="container_jobb" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change('kozma')">
                 <img src="../img/kozma.jpg" alt="" class="image" id="i1" >
                 <div id="overlay_jobb">
                     <div class="text">
@@ -25,6 +25,73 @@
         </div>
         <div class="box">
             <div class="container_bal" onpointerenter="wchange('overlay_jobb', '100%')" onpointerleave="wchange('overlay_jobb', '0%')" onpointerdown="change()" >
+                <img src="../img/larry-ellison.jpg" alt="" class="image" id="i2" >
+                <div id="overlay_bal">
+                    <div class="text">
+                        <h1>Kozma László</h1>
+                        <h3>Villamosmérnök, egyetemi oktató</h3>
+                        <h4>Első magyar digitális számítógép tervezője</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="kozma" style="display: none;">
+            <div class="navbar">
+                <table>
+                    <tr>
+                        <td onpointerdown="reset()">
+                            Kezdőlap
+                        </td>
+                        <td onpointerdown="change('kozma')">
+                            Larry Ellison
+                        </td>
+                        <td class="current" >
+                            Kozma László
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content"></div>
+        </div>
+        <div class="larry" style="display: none;">
+            <div class="navbar">
+                <table>
+                    <tr>
+                        <td onpointerdown="reset()">
+                            Kezdőlap
+                        </td>
+                        <td class="current">
+                            Larry Ellison
+                        </td>
+                        <td onpointerdown="change('kozma')">
+                            Kozma László
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="header">
+                <h1>Larry Joseph Ellison</h1>
+            </div>
+            <div class="content">
+                
+            </div>
+        </div>
+    </div>
+    <div class="mobile">
+        <div class="box">
+            <div class="container_fent" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change('kozma')">
+                <img src="../img/kozma.jpg" alt="" class="image" id="i1" >
+                <div id="overlay_fent">
+                    <div class="text">
+                        <h1>Larry Ellison</h1>
+                        <h3>Befektető, üzletember</h3>
+                        <h4>Oracle Corporation társalapítója, <br> technológiai vezetője(CTO)</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="container_lent" onpointerenter="wchange('overlay_jobb', '100%')" onpointerleave="wchange('overlay_jobb', '0%')" onpointerdown="change()" >
                 <img src="../img/larry-ellison.jpg" alt="" class="image" id="i2" >
                 <div id="overlay_bal">
                     <div class="text">
@@ -77,9 +144,7 @@
                 
             </div>
         </div>
-        <script src="../js/script.js">
-            
-        </script>
-    </div>
+        </div>
+        <script src="../js/script.js"></script>
 </body>
 </html>
