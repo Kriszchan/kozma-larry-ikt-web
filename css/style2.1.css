@@ -1,6 +1,7 @@
 body{
     margin: 0;
     overflow-y: hidden;
+    overflow-x: hidden;
     background-color: #555555;
 }
 * {
@@ -86,13 +87,16 @@ body{
 .container_fent{
         height: 50%;
         width: 100%;
-        /* oracle company ^ building here  */
         background-image: url("../img/comp1950.jpg");
         filter: grayscale();
         background-repeat: no-repeat;
         background-size: cover;
         transition: 0.3s ease-in-out ;
     
+}
+.kozos{
+    /* display: none; */
+    transition:all 0.3s;
 }
 .larry{
     display: none;

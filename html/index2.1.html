@@ -46,38 +46,53 @@
     </div>
     <div class="mobile">
         <div class="box">
-            <div class="container_fent" onpointerenter="wchange('overlay_bal', '100%')" onpointerleave="wchange('overlay_bal', '0%')" onpointerdown="change()">
+            <div class="container_fent" onpointerdown="xchange()">
                 <img src="../img/kozma.jpg" alt="" class="image" id="i1" >
             </div>
         </div>
         <div class="box">
-            <div class="container_lent" onpointerenter="wchange('overlay_jobb', '100%')" onpointerleave="wchange('overlay_jobb', '0%')" onpointerdown="change('larry')" >
+            <div class="container_lent" onpointerdown="xchange('larry')" >
                 <img src="../img/larry-ellison.jpg" alt="" class="image" id="i2" >
             </div>
         </div>
     </div>
     <div class="kozos">
-        <div class="navbar">
-            <table>
-                <tr>
-                    <td onpointerdown="reset()">
-                        Kezdőlap
-                    </td>
-                    <td class="current">
-                        Larry Ellison
-                    </td>
-                    <td onpointerdown="change('kozma',0)">
-                        Kozma László
-                    </td>
-                </tr>
-            </table>
-        </div>
         <div class="kozma" style="display: none;">
+            <div class="navbar">
+                <table>
+                    <tr>
+                        <td onpointerdown="reset()">
+                            Kezdőlap
+                        </td>
+                        <td class="current">
+                            Larry Ellison
+                        </td>
+                        <td onpointerdown="change('kozma',0)">
+                            Kozma László
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <div class="content">
                 
             </div>
         </div>
         <div class="larry" style="display: none;">
+            <div class="navbar">
+                <table>
+                    <tr>
+                        <td onpointerdown="reset()">
+                            Kezdőlap
+                        </td>
+                        <td class="current">
+                            Larry Ellison
+                        </td>
+                        <td onpointerdown="change('kozma',0)">
+                            Kozma László
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <div class="content">
                 <div class="row">
                     <div class="col-xl-3 col-sm-12 cim-bg rounded-3">
