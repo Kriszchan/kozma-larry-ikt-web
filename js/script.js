@@ -1,43 +1,62 @@
+const box1 = document.getElementsByClassName('box')[0];
+const box2 = document.getElementsByClassName('box')[1];
+const elison = document.getElementsByClassName('larry')[0];
+const laci = document.getElementsByClassName('kozma')[0];
 function wchange(valtozando, wid)
             {
                 document.getElementById(valtozando).style.width =  wid;
             }
-function change(megjelen = '')
+async function change(megjelen = 'kozma', varido = 300)
             {
+                slideDivsOut();
                 if(megjelen == 'kozma')
                 {
-                    document.getElementsByClassName('kozma')[0].style.display = "block";
-                    document.getElementsByClassName('larry')[0].style.display = "none";
+                    setTimeout(() => {
+                        kozma();
+                    }, varido);
                 }
-                else
-                {
-                    document.getElementsByClassName('kozma')[0].style.display = "none";
-                    document.getElementsByClassName('larry')[0].style.display = "block";
+                else if(megjelen == 'larry')
+                {  
+                    setTimeout(() => {
+                        larry();
+                    }, varido);
                 }
-                document.getElementsByClassName('box')[0].style.position = "absolute";
-                document.getElementsByClassName('box')[1].style.position = "absolute";
-                document.getElementsByClassName('box')[0].style.width = "0px";
-                document.getElementsByClassName('box')[1].style.width = "0px";
-                document.getElementsByClassName('box')[0].style.bottom = "0";
-                document.getElementsByClassName('box')[1].style.bottom = "0";
-                document.getElementsByClassName('box')[0].style.left = "0";
-                document.getElementsByClassName('box')[1].style.right = "0";
-                document.getElementsByClassName('box')[0].style.height = "100vh";
-                document.getElementsByClassName('box')[1].style.height = "100vh";
-                document.body.style.overflow = "auto";
-
+                setTimeout(() => {      
+                    box1.style.display = "none";
+                    box2.style.display = "none";
+                    document.body.style.overflow = "auto";
+                }, 500);
+                
             }
 function reset()
-{
-                document.getElementsByClassName('box')[1].style.position = "relative";
-                document.getElementsByClassName('box')[0].style.position = "relative";
-                document.getElementsByClassName('box')[1].style.width = "50%";
-                document.getElementsByClassName('box')[0].style.width = "50%";
-                document.getElementsByClassName('box')[1].style.bottom = "0";
-                document.getElementsByClassName('box')[0].style.bottom = "0";
-                document.getElementsByClassName('box')[1].style.left = "0";
-                document.getElementsByClassName('box')[0].style.right = "0";
-                document.getElementsByClassName('box')[1].style.height = "100%";
-                document.getElementsByClassName('box')[0].style.height = "100%";
+{   
+                slideDivsOut();
+                box1.style.display = "block";
+                box2.style.display = "block";
                 document.body.style.overflow = "hidden";
+                laci.style.display = "none";
+                elison.style.display = "none";
+                laci.style.opacity = "0";
+                elison.style.opacity = "0";
+                box1.style.transform = "translateX(0)";
+                box2.style.transform = "translateX(0)";
             }
+function kozma()
+{
+    laci.style.display = "block";
+    elison.style.display = "none";
+    laci.style.opacity = "1";
+    elison.style.opacity = "1";
+}
+function larry()
+{
+    laci.style.display = "none";
+    elison.style.display = "block";
+    laci.style.opacity = "1";
+    elison.style.opacity = "1";
+}
+function slideDivsOut() {
+    box1.style.transform = "translateX(-100%)";
+    box2.style.transform = "translateX(100%)";
+    isSlidOut = true;
+}

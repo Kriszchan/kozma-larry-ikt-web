@@ -8,7 +8,7 @@ body{
     
 }
 .box{
-    transition: 0.5s ease-in-out ;
+    transition: all 0.5s ease-in-out ;
     width: 50%;
     float: left;
     padding: 0;
@@ -97,6 +97,16 @@ body{
         background-size: cover;
         transition: 0.3s ease-in-out ;
     
+}
+.larry{
+    display: none;
+    transition:all 0.3s;
+    opacity: 0;
+}
+.kozma{
+    display: none;
+    transition:all 0.3s;
+    opacity: 0;
 }
 @media only screen and (max-width: 1000px) {
     .mobile{
