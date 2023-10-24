@@ -58,23 +58,157 @@
     </div>
     <div class="kozos">
         <div class="kozma" style="display: none;">
-            <div class="navbar">
-                <table>
-                    <tr>
-                        <td onpointerdown="reset()">
-                            Kezdőlap
-                        </td>
-                        <td onpointerdown="larry()">
-                            Larry Ellison
-                        </td>
-                        <td onpointerdown="curent">
-                            Kozma László
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="content">
-                
+            <div class="container5 mx-auto">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid" style="margin-top: 10px; height: 6vh;">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><img src="../img/menu_kep.png" style="width: 100%; height: 100%;" alt="menu_kep"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item links">
+                                    <a class="nav-link" style="border-right: 2px solid wheat; padding-right: 3vw;" href="#" onpointerdown="reset()">Kezdőlap</a>
+                                </li>
+                                <li class="nav-item links">
+                                    <a class="nav-link" style="border-right: 2px solid wheat; padding-right: 3vw;" href="#" onpointerdown="larry()">Larry Ellison</a>
+                                </li>
+                                <li class="nav-item links">
+                                    <a class="nav-link" href="#">Kozma László</a>
+                                </li>   
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <hr style="background-color: #E3FC02; width: 90%;" class="mx-auto">
+                <div class="row">
+                    <div class="col-xl-3 col-sm-12">
+                        <nav class="navbar">
+                            <div>
+                                <ul class="navbar-nav nav">
+                                    <li>
+                                        <img src="../img/kozma.jpg" width="110" height="110" class="rounded mx-auto d-block align-top" alt="Larry Ellison kép" title="Larry Ellison kép">
+                                    </li>
+                                    <li>
+                                        <h3 class="text-center" style="margin-top: 1vh;">Kozma László</h3>
+                                    </li>
+                                    <li>
+                                        <p class="text-center" style="margin-top: 2vh;">Kozma László mérnöki pályafutása során kivételes problémamegoldó képességeivel és precizitásával kiemelkedett, hozzájárulva az innovációhoz és technológia fejlődéséhez.</p>
+                                    </li>
+                                    <hr style="background-color: #E3FC02;">
+                                    <li class="nav-item active">
+                                        <a class="nav-link alma" onclick="Show('div1')" href="#">Alapvető információk</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link alma" onclick="Show('div2')" href="#">Életútja</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link alma" onclick="Show('div3')" href="#">Munkássága</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link alma" onclick="Show('div4')" href="#">MESZ 1</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link alma" onclick="Show('div5')" href="#">Elismerései</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div1">
+                        <div class="container" style="margin-top: 5vh;">
+                            <div style="text-align: center;">
+                                <h2>Alapvető információk</h2>
+                            </div>
+                            <br>
+                            <hr style="background-color: #E3FC02;">
+                            <div class="div_content">
+                                <ul>
+                                    <li class="felsorolas">Kossuth-díjas villamosmérnök</li>
+                                    <li class="felsorolas">Magyar Tudományos Akadémia tagja</li>
+                                    <li class="felsorolas">Munkássága kiemelkedő jelentőségű a távközléstechnika automatizálása</li>
+                                    <li class="felsorolas">Nevéhez fűződik az első magyarországi digitális számítógép, a MESZ I</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div3" style="display: none;">
+                        <div class="container" style="margin-top: 5vh;">
+                            <div style="text-align: center;">
+                                <h2>Életútja</h2>
+                            </div>
+                            <br>
+                            <hr style="background-color: #E3FC02;">
+                            <div class="div_content">
+                                <ul>
+                                    <li class="felsorolas">Miskolcon született 1902.november.28.</li>
+                                    <li class="felsorolas">1921-ben az újpesti Egyesült Izzónál helyezkedett el villanyszerelőként</li>
+                                    <li class="felsorolas">American Telephone and Telegraph Company mérnök</li>
+                                    <li class="felsorolas">1944 -> deportálják (1946-ben tér vissza Magyarországra)</li>
+                                    <li class="felsorolas">A budapesti Standard Villamossági Rt. telefonmérnöki osztályán főmérnök (országos telefonberendezések tervezése)</li>
+                                    <li class="felsorolas">1949-ben átvette a Budapesti Műszaki Egyetem vezetékes híradás-technikai tanszékének vezetését</li>
+                                    <li class="felsorolas">1950 -> 15 év börtön 1954 szabadul -> tanár</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div4" style="display: none;">
+                        <div class="container" style="margin-top: 5vh;">
+                            <div style="text-align: center;">
+                                <h2>Munkássága</h2>
+                            </div>
+                            <br>
+                            <hr style="background-color: #E3FC02;">
+                            <div class="div_content">
+                                <ul>
+                                    <li class="felsorolas">Távbeszélő-hálózati kapcsolástechnika automatizálásának kérdéseivel foglalkozott</li>
+                                    <li class="felsorolas">Belgiumi, hollandiai, svájci és olaszországi automatikus telefonközpontok és távbeszélő-hálózatok tervezése</li>
+                                    <li class="felsorolas">Magyarországi telefonhálózat újjáépítése, majd a hálózat fejlesztése</li>
+                                    <li class="felsorolas">Magyar Tudományos Akadémia támogatásával foglalkozhatott számítógépek tervezésével</li>
+                                    <li class="felsorolas">1930 első tervezett decimális kalkulátorberendezés</li>
+                                    <li class="felsorolas">Magyarországon elsőként állított üzembe programvezérelt (de az utasításokat nem tároló) bináris digitális számítógépet n(MESZ 1)</li>
+                                    <li class="felsorolas">Oktatásszervezői munkássága szintén kiemelkedő volt, dékánként korszerűsítette a villamosmérnöki képzés tantervét</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div5" style="display: none;">
+                        <div class="container" style="margin-top: 5vh;">
+                            <div style="text-align: center;">
+                                <h2>MESZ 1</h2>
+                            </div>
+                            <br>
+                            <hr style="background-color: #E3FC02;">
+                            <div class="div_content">
+                                <ul>
+                                    <li class="felsorolas">(Műszaki Egyetem Első Digitális Számológépe)</li>
+                                    <li class="felsorolas">Ez a három szekrényben elhelyezett, mintegy 600–800 wattos fogyasztású automata kétezer elektromágneses jelfogóból épült fe</li>
+                                    <li class="felsorolas">1959-ben Magyarországon is megjelent az első elektroncsöves számítógép</li>
+                                    <li class="felsorolas">Kozma a MESZ I továbbfejlesztésével elkészítette az első magyarországi nyelvstatisztikai automatát, amely lyukszalagos adatbevitel útján nyolcvan különböző statisztikai feladat egyidejű megoldására volt alkalmas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-sm-12" id="div2" style="display: none;">
+                        <div class="container" style="margin-top: 5vh;">
+                            <div style="text-align: center;">
+                                <h2>Elismerései</h2>
+                            </div>
+                            <br>
+                            <hr style="background-color: #E3FC02;">
+                            <div class="div_content">
+                                <ul>
+                                    <li class="felsorolas">Magyar tudományos akadémia tagja</li>
+                                    <li class="felsorolas">Előbb a híradás-technikai, majd a távközlési bizottság munkáját elnökölte</li>
+                                    <li class="felsorolas">1948 Tudományos érdemei elismeréseként Kossuth-díj</li>
+                                    <li class="felsorolas">1960 Puskás Tivadar-díjjal tüntették ki</li>
+                                    <li class="felsorolas">1962 Munka Érdemrend</li>
+                                    <li class="felsorolas">1972 Munka Érdemrend arany fokozata</li>
+                                    <li class="felsorolas">1982 Szocialista Magyarországért Érdemrend</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="larry" style="display: none;">
@@ -87,13 +221,13 @@
                     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item links">
-                                <a class="nav-link" style="border-right: 2px solid wheat; padding-right: 3vw;" onpointerdown="reset()">Kezdőlap</a>
+                                <a class="nav-link" style="border-right: 2px solid wheat; padding-right: 3vw;" href="#" onpointerdown="reset()">Kezdőlap</a>
                             </li>
                             <li class="nav-item links">
                                 <a class="nav-link" style="border-right: 2px solid wheat; padding-right: 3vw;" href="#">Larry Ellison</a>
                             </li>
                             <li class="nav-item links">
-                                <a class="nav-link" onpointerdown="kozma()">Kozma László</a>
+                                <a class="nav-link" href="#" onpointerdown="kozma()">Kozma László</a>
                             </li>   
                         </ul>
                     </div>
