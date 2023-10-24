@@ -29,7 +29,6 @@ async function change(megjelen = 'kozma', varido = 500)
                     kozos.display = "block";
                     document.body.style.overflow = "auto";
                 }, 500);
-                mellik = nagy;
                 
             }
 function reset()
@@ -37,7 +36,7 @@ function reset()
                 // slideDivsOut();
                 nagy.style.display = "block";
                 kozos.display = "none";
-                document.body.style.overflow = "hidden";
+                // document.body.style.overflow = "hidden";
                 laci.style.display = "none";
                 elison.style.display = "none";
                 // laci.style.opacity = "0";
@@ -73,15 +72,11 @@ function kozma()
 {
     laci.style.display = "block";
     elison.style.display = "none";
-    laci.style.opacity = "1";
-    elison.style.opacity = "1";
 }
 function larry()
 {
     laci.style.display = "none";
     elison.style.display = "block";
-    laci.style.opacity = "1";
-    elison.style.opacity = "1";
 }
 function slideDivsOut() {
     box1.style.transform = "translateX(-100%)";
@@ -89,7 +84,7 @@ function slideDivsOut() {
     isSlidOut = true;
 }
 function xslideDivsOut() {
-    box1.style.transform = "translateY(-100)";
+    box1.style.transform = "translateY(-100%)";
     box2.style.transform = "translateY(100%)";
     isSlidOut = true;
 }
