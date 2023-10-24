@@ -1,17 +1,27 @@
 body {
-    background-color: gray !important;
+    overflow-x: hidden !important;
+    background-color: grey  !important;
     color: white !important;
+    display: flex;
 }
 
 .container5 {
     background-color: #1F1F21  !important;
-    width: 1300px;
-    margin-left: auto !important;
-    margin-right: auto !important;
+    width: 70vw;
+    transform: translate(25%);
+    left: 50vw;
     display: block;
     margin-top: 3vh;
     padding: 20px;
 }
+
+@media (max-width: 500px) {
+    .container5 {
+      width: 100%;
+      transform: none;
+      left: 0;
+    }
+  }
 
 .alma {
     margin-bottom: 1vh;
