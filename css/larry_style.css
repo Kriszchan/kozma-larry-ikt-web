@@ -1,15 +1,13 @@
 body {
-    overflow-x: hidden !important;
-    background-color: wheat  !important;
+    background-color: gray !important;
     color: white !important;
-    display: flex;
 }
 
 .container5 {
     background-color: #1F1F21  !important;
     width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     display: block;
     margin-top: 3vh;
     padding: 20px;
