@@ -84,7 +84,7 @@ body{
     display: none;
 }
 .container_fent{
-        height: 50vh;
+        height: 50%;
         width: 100%;
         /* oracle company ^ building here  */
         background-image: url("../img/comp1950.jpg");
