@@ -33,14 +33,10 @@ async function change(megjelen = 'kozma', varido = 500)
             }
 function reset()
 {   
-                // slideDivsOut();
                 nagy.style.display = "block";
                 kozos.display = "none";
-                // document.body.style.overflow = "hidden";
                 laci.style.display = "none";
                 elison.style.display = "none";
-                // laci.style.opacity = "0";
-                // elison.style.opacity = "0";
                 box1.style.transition = "0.5s ease-in-out";
                 box2.style.transition = "0.5s ease-in-out";
                 box1.style.transform = "translateX(0)";
