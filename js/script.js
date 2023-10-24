@@ -2,11 +2,12 @@ const box1 = document.getElementsByClassName('box')[0];
 const box2 = document.getElementsByClassName('box')[1];
 const elison = document.getElementsByClassName('larry')[0];
 const laci = document.getElementsByClassName('kozma')[0];
+const nagy = document.getElementsByClassName('large')[0];
 function wchange(valtozando, wid)
             {
                 document.getElementById(valtozando).style.width =  wid;
             }
-async function change(megjelen = 'kozma', varido = 300)
+async function change(megjelen = 'kozma', varido = 500)
             {
                 slideDivsOut();
                 if(megjelen == 'kozma')
@@ -22,22 +23,22 @@ async function change(megjelen = 'kozma', varido = 300)
                     }, varido);
                 }
                 setTimeout(() => {      
-                    box1.style.display = "none";
-                    box2.style.display = "none";
+                    nagy.style.display = "none";
                     document.body.style.overflow = "auto";
                 }, 500);
                 
             }
 function reset()
 {   
-                slideDivsOut();
-                box1.style.display = "block";
-                box2.style.display = "block";
+                // slideDivsOut();
+                nagy.style.display = "block";
                 document.body.style.overflow = "hidden";
                 laci.style.display = "none";
                 elison.style.display = "none";
-                laci.style.opacity = "0";
-                elison.style.opacity = "0";
+                // laci.style.opacity = "0";
+                // elison.style.opacity = "0";
+                box1.style.transition = "0.5s ease-in-out";
+                box2.style.transition = "0.5s ease-in-out";
                 box1.style.transform = "translateX(0)";
                 box2.style.transform = "translateX(0)";
             }

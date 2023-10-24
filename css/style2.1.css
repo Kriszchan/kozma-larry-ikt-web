@@ -83,13 +83,9 @@ body{
 .mobile{
     display: none;
 }
-.overlay_fent{
-    
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
+.container_fent{
+        height: 50vh;
+        width: 100%;
         /* oracle company ^ building here  */
         background-image: url("../img/comp1950.jpg");
         filter: grayscale();
